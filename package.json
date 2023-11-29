@@ -1,6 +1,6 @@
 {
-  "name": "ngx-intl-tel-input-app",
-  "version": "0.0.0",
+  "name": "ngx-intl-tel-input-updated",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -15,10 +15,9 @@
     "copy-readme": "cp ./README.md ./dist/ngx-intl-tel-input",
     "copy-files": "npm run copy-license && npm run copy-readme",
     "npm_pack": "npm run copy-files && cd dist/ngx-intl-tel-input && npm pack",
-    "package": "npm run build_lib && npm run npm_pack",
-    "postinstall": "ngcc"
+    "package": "npm run build_lib && npm run npm_pack"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "8.x - 16.x",
     "@angular/common": "8.x - 16.x",
@@ -71,5 +70,8 @@
     "@angular/common": "8.x - 13.x",
     "@angular/core": "8.x - 13.x",
     "@angular/forms": "8.x - 13.x"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
